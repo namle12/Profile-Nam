@@ -1,0 +1,65 @@
+/*****************************
+* Media Queries *
+ ********************/
+
+/******
+    Desktop
+ ******/
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1028px;
+  }
+}
+/******
+    Taplet & small laptop
+ ******/
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  /** Header **/
+  .header__container {
+    flex-direction: column;
+  }
+  .header__column--left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .header__content--left {
+    align-items: center;
+    & p {
+      text-align: center;
+      max-width: 320px;
+    }
+  }
+  .header__column--right {
+    align-items: center;
+    text-align: center;
+  }
+  /******
+    _Mobile
+ ******/
+  @media (max-width: 640px) {
+    :root {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .container {
+      max-width: 475px;
+      padding: 0 1rem;
+    }
+    header {
+      margin-top: 20px;
+    }
+    .header__badge_container {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+}
