@@ -42,24 +42,56 @@
     align-items: center;
     text-align: center;
   }
-  /******
-    _Mobile
+}
+
+/* *****====================
+   small taplet - landscape mode
  ******/
-  @media (max-width: 640px) {
-    :root {
-      font-size: 14px;
-      line-height: 16px;
-    }
-    .container {
-      max-width: 475px;
-      padding: 0 1rem;
-    }
-    header {
-      margin-top: 20px;
-    }
-    .header__badge_container {
-      flex-direction: column;
-      gap: 12px;
-    }
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  /* About Me  */
+  .aboutme__section {
+    margin: 80px auto;
+  }
+  & img {
+    display: none;
+  }
+}
+
+/* *****====================
+ Phone
+******/
+@media (max-width: 640px) {
+  :root {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .container {
+    max-width: 475px;
+    padding: 0 1rem;
+  }
+  .section__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  /** Header **/
+  header {
+    margin-top: 20px;
+  }
+  .header__badge_container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  /* About Me Section */
+  .aboutme__container {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 2rem;
+  }
+  .aboutme__content_container {
+    border-radius: 2rem;
   }
 }

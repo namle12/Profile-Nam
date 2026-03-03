@@ -16,8 +16,24 @@
   font-weight: 400;
   font-style: normal;
 }
+a {
+  text-decoration: none;
+  /* color: inherit; */
+}
 .container {
   margin: 0 auto;
   max-width: 1536px;
   padding: 0 2rem;
+}
+.section__title {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  font-weight: bold;
+  color: var(--p950);
+  text-transform: capitalize;
+}
+.section__description {
+  text-align: center;
+  max-width: 65ch; /* 65 ký tự trên một dòng để dễ đọc */
+  color: var(--n-500);
 }
