@@ -48,6 +48,12 @@
       margin-top: 8px;
       display: flex;
       gap: 12px;
+      &:nth-child(1) > div.icon-list {
+        animation: move-left 30s linear infinite;
+      }
+      &:nth-child(2) > div.icon-list {
+        animation: move-right 30s linear infinite;
+      }
     }
     & .icon-list {
       display: flex;

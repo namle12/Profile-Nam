@@ -4,6 +4,7 @@
 @import "./Sections/projects.css";
 @import "./Sections/footer.css";
 @import "./Sections/header.css";
+@import "./animation.css";
 
 * {
   box-sizing: border-box;
@@ -15,10 +16,15 @@
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
   /* color: inherit; */
+}
+section {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .container {
   margin: 0 auto;
