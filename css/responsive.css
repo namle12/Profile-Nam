@@ -14,6 +14,14 @@
   .container {
     max-width: 1028px;
   }
+  /* skills */
+  .softskill_badge {
+    position: static !important;
+    transform: none !important;
+  }
+  .softskills__book_icons {
+    display: none !important;
+  }
 }
 /******
     Taplet & small laptop
@@ -21,6 +29,10 @@
 @media (max-width: 1280px) {
   .container {
     max-width: 1024px;
+  }
+  section {
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
   /** Header **/
   .header__container {
@@ -42,24 +54,66 @@
     align-items: center;
     text-align: center;
   }
-  /******
-    _Mobile
+}
+
+/* *****====================
+   small taplet - landscape mode
  ******/
-  @media (max-width: 640px) {
-    :root {
-      font-size: 14px;
-      line-height: 16px;
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  /* About Me  */
+  .aboutme__section {
+    margin: 80px auto;
+    & img {
+      display: none;
     }
-    .container {
-      max-width: 475px;
-      padding: 0 1rem;
+  }
+  /* Skills */
+  .skills__grid_container {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-rows: repeat(4, minmax(280px, auto));
+    & .skill__grid_item {
+      padding: 1rem 1rem;
+      grid-column: span 1 !important;
+      grid-row: span 1 !important;
     }
-    header {
-      margin-top: 20px;
-    }
-    .header__badge_container {
-      flex-direction: column;
-      gap: 12px;
-    }
+  }
+}
+
+/* *****====================
+ Phone
+******/
+@media (max-width: 640px) {
+  :root {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .container {
+    max-width: 475px;
+    padding: 0 1rem;
+  }
+  .section__title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  /** Header **/
+  header {
+    margin-top: 20px;
+  }
+  .header__badge_container {
+    flex-direction: column;
+    gap: 12px;
+  }
+  /* About Me Section */
+  .aboutme__container {
+    padding: 1rem;
+    width: 90%;
+    border-radius: 2rem;
+  }
+  .aboutme__content_container {
+    border-radius: 2rem;
   }
 }

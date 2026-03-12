@@ -4,6 +4,7 @@
 @import "./Sections/projects.css";
 @import "./Sections/footer.css";
 @import "./Sections/header.css";
+@import "./animation.css";
 
 * {
   box-sizing: border-box;
@@ -15,9 +16,36 @@
   font-family: "Chakra Petch", sans-serif;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  /* color: inherit; */
+}
+section {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .container {
   margin: 0 auto;
   max-width: 1536px;
   padding: 0 2rem;
+}
+.section__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.section__title {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  font-weight: bold;
+  color: var(--p950);
+  text-transform: capitalize;
+}
+.section__description {
+  text-align: center;
+  max-width: 65ch; /* 65 ký tự trên một dòng để dễ đọc */
+  color: var(--n-500);
 }
